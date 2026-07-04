@@ -1,4 +1,4 @@
-# FIONNA R Example
+# FIONNA
 
 This folder contains a compact R implementation of **Functional Inference with Orthogonal Neural Network Adjustment (FIONNA)** for a scalar outcome, one or more scalar exposures, multiple functional mediators, and baseline covariates.
 
@@ -10,7 +10,7 @@ The code is organized so the method file is separate from the simulated data and
 - `data/simulate_shared_profile.R`: simulated four-functional-mediator data generator.
 - `examples/run_example.R`: example script that sources the method and data files, then runs FIONNA.
 
-## What The Code Does
+## Description
 
 The function `fionna_fit()` in `R/fionna.R` implements the estimation procedure:
 
@@ -26,7 +26,7 @@ The function `fionna_fit()` in `R/fionna.R` implements the estimation procedure:
 
 Direct and total effects are returned as point estimates, but this example exposes inference only for the indirect effect.
 
-## Selected Illustrative Setting
+## Example
 
 From the completed simulation summaries, I ranked FIONNA null settings by closeness of 95% Wald coverage to 0.95 with priority:
 
@@ -46,7 +46,7 @@ The selected illustrative setting is the four-functional-mediator shared-profile
 
 In the completed Monte Carlo results, this setting gave FIONNA indirect-effect coverage approximately `0.9467`, closest to the nominal 95% target among the FIONNA rows considered. The corresponding total and direct coverage were approximately `0.8900` and `0.7100`; therefore, this example should be interpreted primarily as an indirect-effect inference example.
 
-## Installation
+## Setup
 
 Install R package dependencies:
 
@@ -94,7 +94,7 @@ fit <- fionna_fit(
 fit$indirect_inference$ci
 ```
 
-## Use Your Own Data
+## Personalized Data
 
 Your inputs should have the following form:
 
