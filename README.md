@@ -9,8 +9,7 @@ Inference with Orthogonal Neural Network Adjustment (FIONNA).
 functional mediator, three-fold inner validation over a fixed ReLU architecture
 grid, unregularized residualized-exposure projection, cross-validated ridge
 stabilization for mediator-score coefficients, and influence-function standard
-errors for the total, direct, and indirect effects. The FPCA basis is never
-estimated from a held-out outer fold.
+errors for the total, direct, and indirect effects. 
 
 ## Install
 
