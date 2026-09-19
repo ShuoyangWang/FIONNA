@@ -1,6 +1,6 @@
 # FIONNA
 
-This repository contains the revised Python implementation of Functional
+This repository contains the Python implementation of Functional
 Inference with Orthogonal Neural Network Adjustment (FIONNA).
 
 ## Method
